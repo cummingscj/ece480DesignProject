@@ -9,6 +9,7 @@ class CChildFrame : public CMDIChildWnd
 	DECLARE_DYNCREATE(CChildFrame)
 public:
 	CChildFrame();
+	virtual void ActivateFrame(int nCmdShow = -1);
 
 // Attributes
 public:

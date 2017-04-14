@@ -1,4 +1,4 @@
-//Microsoft Visual C++ generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -16,19 +16,25 @@
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
-#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE
+2 TEXTINCLUDE 
 BEGIN
     "#ifndef APSTUDIO_INVOKED\r\n"
     "#include ""targetver.h""\r\n"
@@ -38,7 +44,7 @@ BEGIN
     "\0"
 END
 
-3 TEXTINCLUDE
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_OLE_RESOURCES\r\n"
     "#define _AFX_NO_TRACKER_RESOURCES\r\n"
@@ -63,12 +69,10 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DesignProject.ico"
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE 9, 1
-IDR_MAINFRAME           ICON         "res\\DesignProject.ico"
-IDR_DesignProjectTYPE         ICON         "res\\DesignProjectDoc.ico"
-#endif
+IDR_DesignProjectTYPE   ICON                    "res\\DesignProjectDoc.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -76,6 +80,7 @@ IDR_DesignProjectTYPE         ICON         "res\\DesignProjectDoc.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -97,9 +102,6 @@ BEGIN
 END
 
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE 9, 1
-
 /////////////////////////////////////////////////////////////////////////////
 //
 // Menu
@@ -115,7 +117,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
-        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1,GRAYED
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
         MENUITEM "E&xit",                       ID_APP_EXIT
     END
@@ -125,24 +127,24 @@ BEGIN
         MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
         POPUP "&Application Look"
         BEGIN
-            MENUITEM "Windows &2000",           ID_VIEW_APPLOOK_WIN_2000
-            MENUITEM "Office &XP",              ID_VIEW_APPLOOK_OFF_XP
-            MENUITEM "&Windows XP",             ID_VIEW_APPLOOK_WIN_XP
-            MENUITEM "Office 200&3",            ID_VIEW_APPLOOK_OFF_2003
-            MENUITEM "Visual Studio 200&5",     ID_VIEW_APPLOOK_VS_2005
-            MENUITEM "Visual Studio 200&8",     ID_VIEW_APPLOOK_VS_2008
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
             POPUP "Office 200&7"
             BEGIN
-                MENUITEM "&Blue Style",         ID_VIEW_APPLOOK_OFF_2007_BLUE
-                MENUITEM "B&lack Style",        ID_VIEW_APPLOOK_OFF_2007_BLACK
-                MENUITEM "&Silver Style",       ID_VIEW_APPLOOK_OFF_2007_SILVER
-                MENUITEM "&Aqua Style",         ID_VIEW_APPLOOK_OFF_2007_AQUA
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
             END
         END
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&About DesignProject...",          ID_APP_ABOUT
+        MENUITEM "&About DesignProject...",     ID_APP_ABOUT
     END
 END
 
@@ -155,14 +157,49 @@ BEGIN
         MENUITEM "&Close",                      ID_FILE_CLOSE
         MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
         MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "&Clear All",                  ID_FILE_CLEAR
         MENUITEM SEPARATOR
         MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
         MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
         MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
-        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1,GRAYED
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
         MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Communication"
+    BEGIN
+        MENUITEM "&Enabled",                    ID_COMMUNICATION_ENABLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Connect Commands",           ID_COMMUNICATION_CONNECT
+        MENUITEM "&Disconnect Commands",        ID_COMMUNICATION_DISCONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Connect Camera",             ID_COMMUNICATION_CONNECTCAMERA
+        MENUITEM "&Disconnect Camera",          ID_COMMUNICATION_DISCONNECTCAMERA
+        MENUITEM SEPARATOR
+        MENUITEM "&Setup",                      ID_COMMUNICATION_SETUP
+        MENUITEM "&Clear",                      ID_COMMUNICATION_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Send Test Command",          ID_COMMUNICATION_SENDTESTCOMMAND
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Eye Tracking"
+    BEGIN
+        MENUITEM "&Start Classifications",      ID_EYETRACKING_STARTCLASSIFICATIONS
+        MENUITEM "&Stop Classifications",       ID_EYETRACKING_STOPCLASSIFICATIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Setup",                      ID_EYETRACKING_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear",                      ID_EYETRACKING_CLEAR
+    END
+    POPUP "&Move Camera"
+    BEGIN
+        MENUITEM "&Right",                      ID_ROBOT_FORWARD
+        MENUITEM "&Left",                       ID_MOVEMENT_LEFT
+        MENUITEM "&Up",                         ID_MOVEMENT_UP
+        MENUITEM "&Down",                       ID_MOVEMENT_DOWN
+        MENUITEM SEPARATOR
+        MENUITEM "&Setup",                      ID_MOVEMENT_SETUP
     END
     POPUP "&Edit"
     BEGIN
@@ -178,18 +215,18 @@ BEGIN
         MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
         POPUP "&Application Look"
         BEGIN
-            MENUITEM "Windows &2000",           ID_VIEW_APPLOOK_WIN_2000
-            MENUITEM "Office &XP",              ID_VIEW_APPLOOK_OFF_XP
-            MENUITEM "&Windows XP",             ID_VIEW_APPLOOK_WIN_XP
-            MENUITEM "Office 200&3",            ID_VIEW_APPLOOK_OFF_2003
-            MENUITEM "Visual Studio 200&5",     ID_VIEW_APPLOOK_VS_2005
-            MENUITEM "Visual Studio 200&8",     ID_VIEW_APPLOOK_VS_2008
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
             POPUP "Office 200&7"
             BEGIN
-                MENUITEM "&Blue Style",         ID_VIEW_APPLOOK_OFF_2007_BLUE
-                MENUITEM "B&lack Style",        ID_VIEW_APPLOOK_OFF_2007_BLACK
-                MENUITEM "&Silver Style",       ID_VIEW_APPLOOK_OFF_2007_SILVER
-                MENUITEM "&Aqua Style",         ID_VIEW_APPLOOK_OFF_2007_AQUA
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
             END
         END
     END
@@ -202,21 +239,19 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&About DesignProject...",          ID_APP_ABOUT
+        MENUITEM "&About DesignProject...",     ID_APP_ABOUT
     END
 END
 
-
-
-
 IDR_THEME_MENU MENU
 BEGIN
-    MENUITEM "Office 2007 (&Blue Style)",       ID_VIEW_APPLOOK_OFF_2007_BLUE
-    MENUITEM "Office 2007 (B&lack Style)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
-    MENUITEM "Office 2007 (&Silver Style)",     ID_VIEW_APPLOOK_OFF_2007_SILVER
-    MENUITEM "Office 2007 (&Aqua Style)",       ID_VIEW_APPLOOK_OFF_2007_AQUA
-    MENUITEM "Win&dows 7",                      ID_VIEW_APPLOOK_WINDOWS_7
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
 END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -225,23 +260,21 @@ END
 
 IDR_MAINFRAME ACCELERATORS
 BEGIN
-    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL
-    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
-    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
-    "P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
-	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
-	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
-	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
-	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
-    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
-    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
-    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
-    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
-    VK_F6,          ID_NEXT_PANE,           VIRTKEY
-    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
 END
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -252,7 +285,7 @@ END
 IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About DesignProject"
-FONT 8, "MS Shell Dlg"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
     LTEXT           "DesignProject, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
@@ -260,6 +293,71 @@ BEGIN
     DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
 END
 
+IDD_COMDLG DIALOGEX 0, 0, 310, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Communication Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,253,155,50,14
+    LTEXT           "Test Command",IDC_STATIC,80,98,49,8
+    EDITTEXT        IDC_EDIT3,139,96,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,140,60,68,14,ES_AUTOHSCROLL
+    LTEXT           "Commands Out Port",IDC_STATIC,67,61,65,8
+    EDITTEXT        IDC_EDIT1,140,26,68,14,ES_AUTOHSCROLL
+    LTEXT           "Robot Camera In Port",IDC_STATIC,64,27,70,8
+END
+
+IDD_COMMANDSETUP DIALOGEX 0, 0, 310, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Commands"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,253,155,50,14
+    EDITTEXT        IDC_EDIT1,159,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,159,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,159,81,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,159,103,40,14,ES_AUTOHSCROLL
+    LTEXT           "Up",IDC_STATIC,124,35,10,8
+    LTEXT           "Down",IDC_STATIC,120,59,19,8
+    LTEXT           "Left",IDC_STATIC,123,82,13,8
+    LTEXT           "Right",IDC_STATIC,120,105,17,8
+END
+
+IDD_EYETRACKFILTERSETUPDLG DIALOGEX 0, 0, 389, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eye Tracker Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,279,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,332,185,50,14
+    EDITTEXT        IDC_EDIT1,133,16,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,133,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,133,102,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,133,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,133,79,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,133,122,40,14,ES_AUTOHSCROLL
+    LTEXT           "Positive X Threshold",IDC_STATIC,56,17,65,8
+    LTEXT           "Positive Y Threshold",IDC_STATIC,56,39,65,8
+    LTEXT           "X Pos Bias (Right%)",IDC_STATIC,60,60,64,8
+    LTEXT           "X Neg Bias (Left%)",IDC_STATIC,64,80,61,8
+    LTEXT           "Y Pos Bias (Up%)",IDC_STATIC,64,104,57,8
+    LTEXT           "Y Neg Bias (Down%)",IDC_STATIC,60,123,68,8
+    LTEXT           "Negative X Threshold",IDC_STATIC,208,18,68,8
+    LTEXT           "Negative Y Threshold",IDC_STATIC,207,38,69,8
+    EDITTEXT        IDC_EDIT7,288,15,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,288,36,40,14,ES_AUTOHSCROLL
+    LTEXT           "X Constant",IDC_STATIC,236,81,35,8
+    LTEXT           "Y Constant",IDC_STATIC,236,107,35,8
+    EDITTEXT        IDC_EDIT9,287,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,287,106,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Graph Filter",IDC_GRAPHFILTERBUTTON,226,185,50,14
+    EDITTEXT        IDC_EDIT11,132,176,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,132,158,40,14,ES_AUTOHSCROLL
+    LTEXT           "Derivative Graph Range +-",IDC_STATIC,33,159,85,8
+    LTEXT           "Bias Graph Range +-",IDC_STATIC,51,178,67,8
+END
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -267,18 +365,18 @@ END
 // Version
 //
 
-VS_VERSION_INFO     VERSIONINFO
-  FILEVERSION       1,0,0,1
-  PRODUCTVERSION    1,0,0,1
- FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
- FILEFLAGS VS_FF_DEBUG
+ FILEFLAGS 0x1L
 #else
  FILEFLAGS 0x0L
 #endif
- FILEOS VOS_NT_WINDOWS32
- FILETYPE VFT_APP
- FILESUBTYPE VFT2_UNKNOWN
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
@@ -286,19 +384,20 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "TODO: <Company name>"
             VALUE "FileDescription", "DesignProject"
-            VALUE "FileVersion",     "1.0.0.1"
-            VALUE "InternalName",    "DesignProject.exe"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DesignProject.exe"
             VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
-            VALUE "OriginalFilename","DesignProject.exe"
+            VALUE "OriginalFilename", "DesignProject.exe"
             VALUE "ProductName", "TODO: <Product name>"
-            VALUE "ProductVersion",  "1.0.0.1"
+            VALUE "ProductVersion", "1.0.0.1"
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x0409, 1200
+        VALUE "Translation", 0x409, 1200
     END
 END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -315,8 +414,54 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 55
     END
+
+    IDD_COMDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_COMMANDSETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_EYETRACKFILTERSETUPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
 END
 #endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_COMDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_COMMANDSETUP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EYETRACKFILTERSETUPDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -325,20 +470,22 @@ END
 
 STRINGTABLE
 BEGIN
-    IDP_OLE_INIT_FAILED       "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
-    IDP_SOCKETS_INIT_FAILED    "Windows sockets initialization failed."
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
 END
+
 STRINGTABLE
 BEGIN
-// Non-mac-targeting apps remove the two extra substrings
     IDR_MAINFRAME           "Design Project"
-    IDR_DesignProjectTYPE         "\nDesignProject\nDesignProject\n\n\nDesignProject.Document\nDesignProject.Document"
+    IDR_DesignProjectTYPE   "\nDesignProject\nDesignProject\n\n\nDesignProject.Document\nDesignProject.Document"
 END
+
 STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "DesignProject"
     AFX_IDS_IDLEMESSAGE     "Ready"
 END
+
 STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
@@ -348,6 +495,7 @@ BEGIN
     ID_INDICATOR_OVR        "OVR"
     ID_INDICATOR_REC        "REC"
 END
+
 STRINGTABLE
 BEGIN
     ID_FILE_NEW             "Create a new document\nNew"
@@ -357,11 +505,19 @@ BEGIN
     ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
     ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
     ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
-    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
     ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
     ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
     ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
     ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
     ID_FILE_MRU_FILE1       "Open this document"
     ID_FILE_MRU_FILE2       "Open this document"
     ID_FILE_MRU_FILE3       "Open this document"
@@ -378,14 +534,26 @@ BEGIN
     ID_FILE_MRU_FILE14      "Open this document"
     ID_FILE_MRU_FILE15      "Open this document"
     ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
     ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
     ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
     ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
     ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
     ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
     ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
     ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
     ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
     ID_EDIT_CLEAR           "Erase the selection\nErase"
     ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
     ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
@@ -397,6 +565,10 @@ BEGIN
     ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
     ID_EDIT_UNDO            "Undo the last action\nUndo"
     ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
     ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
     ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
 END
@@ -410,29 +582,41 @@ BEGIN
     AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
     AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
     AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
     AFX_IDS_SCRESTORE       "Restore the window to normal size"
     AFX_IDS_SCTASKLIST      "Activate Task List"
     AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
 END
 
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
 
-#endif
+
 
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-
 #define _AFX_NO_OLE_RESOURCES
 #define _AFX_NO_TRACKER_RESOURCES
 #define _AFX_NO_PROPERTY_RESOURCES
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE 9, 1
-#include "res\\DesignProject.rc2"  // non-Microsoft Visual C++ edited resources
+#include "res\DesignProject.rc2"  // non-Microsoft Visual C++ edited resources
 #include "afxres.rc"      // Standard components
-#include "afxprint.rc"  // printing/print preview resources
+#include "afxprint.rc"    // printing/print preview resources
 #endif
+
+/////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
+

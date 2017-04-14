@@ -4,6 +4,9 @@
 
 #pragma once
 
+#include <string>
+#include <vector>
+#include <utility>
 
 class CDesignProjectView : public CView
 {
@@ -11,9 +14,17 @@ protected: // create from serialization only
 	CDesignProjectView();
 	DECLARE_DYNCREATE(CDesignProjectView)
 
+private:
+	std::vector<std::pair<CString, CString>> mStatusV;
+	std::vector<std::pair<CString, CString>> mMetricsV;
+
 // Attributes
 public:
 	CDesignProjectDoc* GetDocument() const;
+	void UpdateStatusDisplays();
+	void UpdateMetricsDisplays();
+	int mStatusXRightInit;
+	int mMetricsXLeftInit;
 
 // Operations
 public:
